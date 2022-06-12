@@ -17,28 +17,27 @@ body {
   font-family: "Poppins", sans-serif;
   overflow: hidden;
 }
-.nav-menu {
-  @apply bg-[#F9F9FF] flex justify-between items-center px-6 py-4 md:px-6 md:py-6;
+.nav-bar {
+  @apply bg-[#F9F9FF] flex justify-between items-center p-6 lg:py-8;
 }
-.portfolio-name {
+.nav-bar-title {
   @apply flex-shrink-0 text-white text-xl bg-black px-2 font-bold  ms:tracking-[1px] ts:tracking-[2px] sm:tracking-[4px];
 }
 .toggle-button {
   @apply lg:hidden w-10 p-2 border-2 border-black relative z-10;
 }
-.nav-links {
-  @apply hidden lg:flex text-lg font-semibold uppercase;
-}
-.nav-links-mobile {
+.nav-menu {
   background: var(--gradient);
-  @apply lg:hidden text-lg font-semibold uppercase absolute top-1/2 left-[100%] -translate-y-1/2 transition-all duration-500 ease-in w-full h-full flex items-center justify-center flex-col opacity-0;
+  @apply w-full h-full absolute left-0 top-0 flex items-center justify-center translate-x-full transition-all duration-1000 opacity-0  
+  lg:w-auto lg:relative lg:translate-x-0 lg:opacity-100
+  lg:bg-none;
 }
-.nav-links-mobile.active {
-  @apply left-1/2 -translate-x-1/2 opacity-100;
+.nav-menu.mobile {
+  @apply translate-x-0 opacity-100;
+}
+.nav-links {
+  @apply flex flex-col lg:flex-row;
 }
 .nav-link {
-  @apply mx-4 hover:text-[#8490ff] cursor-pointer;
-}
-.nav-link-mobile {
-  @apply my-4 text-center text-2xl font-bold uppercase  hover:text-white cursor-pointer;
+  @apply my-6 lg:my-0 lg:mx-4 font-bold text-xl lg:text-base uppercase text-center;
 }
