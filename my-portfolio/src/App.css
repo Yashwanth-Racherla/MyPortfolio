@@ -1,0 +1,44 @@
+:root {
+  --heading: rgb(0 10 45);
+  --para: #777777;
+  --para-tint: #e4e4e4;
+  --white: #fff;
+  --helper: #8490ff;
+  --helper-tint: #f3f4ff;
+  --bg: rgb(249 249 255);
+  --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+  --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+.nav-menu {
+  @apply bg-[#F9F9FF] flex justify-between items-center px-6 py-4 md:px-6 md:py-6;
+}
+.portfolio-name {
+  @apply flex-shrink-0 text-white text-xl bg-black px-2 font-bold  ms:tracking-[1px] ts:tracking-[2px] sm:tracking-[4px];
+}
+.toggle-button {
+  @apply lg:hidden w-10 p-2 border-2 border-black relative z-10;
+}
+.nav-links {
+  @apply hidden lg:flex text-lg font-semibold uppercase;
+}
+.nav-links-mobile {
+  background: var(--gradient);
+  @apply lg:hidden text-lg font-semibold uppercase absolute top-1/2 left-[100%] -translate-y-1/2 transition-all duration-500 ease-in w-full h-full flex items-center justify-center flex-col opacity-0;
+}
+.nav-links-mobile.active {
+  @apply left-1/2 -translate-x-1/2 opacity-100;
+}
+.nav-link {
+  @apply mx-4 hover:text-[#8490ff] cursor-pointer;
+}
+.nav-link-mobile {
+  @apply my-4 text-center text-2xl font-bold uppercase  hover:text-white cursor-pointer;
+}
