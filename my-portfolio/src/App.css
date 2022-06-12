@@ -39,5 +39,5 @@ body {
   @apply flex flex-col lg:flex-row;
 }
 .nav-link {
-  @apply my-6 lg:my-0 lg:mx-4 font-bold text-xl lg:text-base uppercase text-center;
+  @apply my-4 lg:my-0 lg:mx-4 font-bold text-2xl lg:text-base uppercase text-center cursor-pointer hover:text-white lg:hover:text-[#8490ff] tracking-wide;
 }
