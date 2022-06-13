@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NavBar = () => {
+const Header = () => {
   const [toggle, setToggle] = useState(true);
 
   return (
@@ -30,4 +30,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Header;

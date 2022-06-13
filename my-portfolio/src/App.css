@@ -42,11 +42,11 @@ p {
   @apply flex-shrink-0 text-white text-xl bg-black px-2 font-bold  ms:tracking-[1px] ts:tracking-[2px] sm:tracking-[4px];
 }
 .toggle-button {
-  @apply lg:hidden w-10 p-2 border-2 border-black relative z-10;
+  @apply lg:hidden w-10 p-2 border-2 border-black relative z-20;
 }
 .nav-menu {
   background: var(--gradient);
-  @apply w-full h-full absolute left-0 top-0 flex items-center justify-center translate-x-full transition-all duration-1000 opacity-0  
+  @apply w-full h-full absolute left-0 top-0 flex items-center justify-center translate-x-full transition-all duration-1000 opacity-0 z-10 
   lg:w-auto lg:relative lg:translate-x-0 lg:opacity-100
   lg:bg-none;
 }
