@@ -16,7 +16,25 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
+  letter-spacing: 1px;
 }
+
+h1 {
+  @apply text-2xl font-extrabold;
+}
+h2 {
+  @apply text-xl font-bold;
+}
+h3 {
+  @apply text-lg font-semibold;
+}
+h4 {
+  @apply text-base font-semibold my-8 text-white;
+}
+p {
+  @apply text-xs md:text-sm xl:text-base font-normal;
+}
+
 .nav-bar {
   @apply bg-[#F9F9FF] flex justify-between items-center p-6 lg:py-8;
 }
@@ -40,4 +58,45 @@ body {
 }
 .nav-link {
   @apply my-4 lg:my-0 lg:mx-4 font-bold text-2xl lg:text-base uppercase text-center cursor-pointer hover:text-white lg:hover:text-[#8490ff] tracking-wide;
+}
+
+.section {
+  @apply px-6 py-10;
+}
+.container {
+  @apply w-[90%] max-w-[1600px] mx-auto;
+}
+
+.footer-section {
+  background: var(--heading);
+}
+
+.footer-content {
+  @apply flex flex-wrap text-[#adadad];
+}
+
+.footer-content li {
+  @apply flex items-center my-4;
+}
+.footer-content li p {
+  @apply pl-2 cursor-pointer hover:text-white;
+}
+
+.footer-icon {
+  background: rgb(144 172 209 / 20%);
+  border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  animation: waterwave 5s infinite;
+  @apply w-8 h-8 cursor-pointer p-3;
+}
+
+@keyframes waterwave {
+  0% {
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  }
+  50% {
+    border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
+  }
+  100% {
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  }
 }
