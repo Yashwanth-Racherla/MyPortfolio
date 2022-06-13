@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [toggle, setToggle] = useState(true);
@@ -19,11 +20,21 @@ const Header = () => {
 
       <div className={`nav-menu ${!toggle && "mobile"}`}>
         <ul className="nav-links">
-          <li className="nav-link">Home</li>
-          <li className="nav-link">About</li>
-          <li className="nav-link">Services</li>
-          <li className="nav-link">Portfolio</li>
-          <li className="nav-link">Contact</li>
+          <li className="nav-link" onClick={() => setToggle(!toggle)}>
+            <Link to="/">Home</Link>
+          </li>
+          <li className="nav-link" onClick={() => setToggle(!toggle)}>
+            <Link to="/About">About</Link>
+          </li>
+          <li className="nav-link" onClick={() => setToggle(!toggle)}>
+            <Link to="/Services">Services</Link>
+          </li>
+          <li className="nav-link" onClick={() => setToggle(!toggle)}>
+            <Link to="/Portfolio">Portfolio</Link>
+          </li>
+          <li className="nav-link" onClick={() => setToggle(!toggle)}>
+            <Link to="/Contact">Contact</Link>
+          </li>
         </ul>
       </div>
     </header>
