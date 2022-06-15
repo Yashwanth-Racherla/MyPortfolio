@@ -41,9 +41,15 @@ p {
 .section {
   @apply py-10;
 }
-
 .container {
   @apply w-[90%] max-w-[1600px] mx-auto;
+}
+.button {
+  background: var(--gradient);
+  @apply text-white text-sm px-4 py-2 font-bold uppercase;
+}
+.button:hover {
+  box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
 }
 
 /* Header Section CSS  */
@@ -137,52 +143,57 @@ p {
   @apply absolute left-3 w-[150px] h-[2px];
 }
 
-.my-skills {
+.biodata-stats {
   @apply relative w-[90%] mb-10;
 }
-.progress-bar::before {
+.biodata-progress-bar::before {
   content: "";
   background-color: #e9ecef;
   @apply absolute top-[120%] w-full h-[6px] rounded-sm;
 }
-.progress-bar::after {
+.biodata-progress-bar::after {
   content: "";
   background: var(--gradient);
   @apply absolute top-[120%] left-0 w-[95%] h-[6px] rounded-sm;
 }
-.progress-bar-2::after {
+.biodata-progress-bar-2::after {
   @apply w-[90%];
 }
-.progress-bar-3::after {
+.biodata-progress-bar-3::after {
   @apply w-[80%];
 }
-.progress-bar-4::after {
+.biodata-progress-bar-4::after {
   @apply w-[70%];
 }
-.progress-bar-5::after {
+.biodata-progress-bar-5::after {
   @apply w-[85%];
 }
-.skill-bar {
+.biodata-skill-bar {
   background: var(--helper);
-  @apply absolute top-[200%] -translate-x-1/2 left-[95%] px-[6px] py-[2px] text-white text-[10px] font-bold;
+  @apply absolute top-[200%] left-[95%] -translate-x-1/2 px-[6px] py-[2px] text-white text-[10px] font-bold;
 }
-.skill-bar-2 {
+.biodata-skill-bar-2 {
   @apply left-[90%];
 }
-.skill-bar-3 {
+.biodata-skill-bar-3 {
   @apply left-[80%];
 }
-.skill-bar-4 {
+.biodata-skill-bar-4 {
   @apply left-[70%];
 }
-.skill-bar-5 {
+.biodata-skill-bar-5 {
   @apply left-[85%];
 }
 
-.skill-bar::before {
+.biodata-skill-bar::after {
   content: "";
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 8px solid var(--helper);
   @apply absolute bottom-full left-1/2 -translate-x-1/2;
+}
+
+.biodata-image {
+  box-shadow: -15px -15px var(--helper);
+  @apply w-1/2 mx-auto;
 }
