@@ -7,7 +7,7 @@ const About = () => {
         <div className="md:w-1/2">
           <div className="mb-10">
             <h2 className="section-title">My Bio-Data</h2>
-            <p>
+            <p className="max-w-[700px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
               autem iure temporibus nihil adipisci eius tempora perferendis aut
               consequuntur doloremque fugiat repudiandae magnam saepe cum, quos

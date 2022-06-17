@@ -12,7 +12,7 @@ const Home = () => {
           <div className="md:w-1/2">
             <span className="text-[#8490ff] font-bold">THIS IS ME</span>
             <h1 className="mb-6 xl:mb-14">YASHWANTH RACHERLA</h1>
-            <p className="mb-6 xl:mb-14">
+            <p className="mb-6 xl:mb-14 max-w-[700px]">
               I'm Yashwanth Racherla. A Front End Developer and freelancer.
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ad
               veritatis consequatur tenetur quod rem omnis, doloribus, cum,

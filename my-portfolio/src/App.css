@@ -27,7 +27,7 @@ h2 {
   @apply text-xl font-bold;
 }
 h3 {
-  @apply text-base font-semibold;
+  @apply text-base font-semibold lg:text-lg;
 }
 h4 {
   @apply text-base font-semibold my-8 text-white;
@@ -37,7 +37,7 @@ p {
   @apply text-sm lg:text-base font-normal;
 }
 .container {
-  @apply w-[90%] max-w-[1600px] mx-auto;
+  @apply w-[90%] max-w-[1400px] mx-auto;
 }
 .flex-box {
   @apply md:flex md:items-center md:justify-between md:gap-8;
@@ -68,8 +68,17 @@ p {
   @apply absolute left-3 w-[150px] xl:w-[200px] h-[3px];
 }
 .biodata-section p,
-.hero-section p {
+.hero-section p,
+.services-section p,
+.portfolio section p {
   @apply text-[#777777];
+}
+
+.icon {
+  background: rgb(144 172 209 / 20%);
+  border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  animation: waterwave 5s infinite;
+  @apply cursor-pointer p-3;
 }
 
 /* Header Section CSS  */
@@ -122,10 +131,7 @@ p {
 }
 
 .footer-icon {
-  background: rgb(144 172 209 / 20%);
-  border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
-  animation: waterwave 5s infinite;
-  @apply w-8 h-8 cursor-pointer p-3;
+  @apply w-8 h-8;
 }
 
 @keyframes waterwave {
@@ -212,3 +218,12 @@ p {
 }
 
 /* Services Section CSS */
+
+.services-icon {
+  border: 1px solid black;
+  @apply w-16 h-16 block mx-auto;
+}
+.service-card {
+  box-shadow: var(--shadow);
+  @apply rounded-lg text-center py-14 px-6 transition-all duration-300 hover:-translate-y-5;
+}

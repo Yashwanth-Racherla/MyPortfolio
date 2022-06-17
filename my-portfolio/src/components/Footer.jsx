@@ -83,11 +83,11 @@ const Footer = () => {
       </div>
 
       <div className="text-white flex justify-center items-center gap-4 my-10">
-        <ion-icon class="footer-icon" name="logo-facebook"></ion-icon>
+        <ion-icon class="icon footer-icon" name="logo-facebook"></ion-icon>
 
-        <ion-icon class="footer-icon" name="logo-instagram"></ion-icon>
+        <ion-icon class="icon footer-icon" name="logo-instagram"></ion-icon>
 
-        <ion-icon class="footer-icon" name="logo-youtube"></ion-icon>
+        <ion-icon class="icon footer-icon" name="logo-youtube"></ion-icon>
       </div>
 
       <p className="text-white text-center text-xs md:text-sm  xl:text-base py-2">
