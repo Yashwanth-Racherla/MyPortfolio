@@ -2,7 +2,7 @@ import React from "react";
 import About from "./About";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
-import Contact from "./Contact";
+// import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              className="mt-6 w-2/3 md:w-4/5 mx-auto"
+              className="hero-image"
               src="./hero-section-image.jpg"
               alt="hero-img"
             />
@@ -31,9 +31,9 @@ const Home = () => {
         </div>
       </div>
       <About />
-      <Services />
       <Portfolio />
-      <Contact />
+      <Services />
+      {/* <Contact /> */}
     </>
   );
 };

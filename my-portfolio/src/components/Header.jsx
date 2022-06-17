@@ -26,10 +26,10 @@ const Header = () => {
               <Link to="/About">About</Link>
             </li>
             <li className="nav-link" onClick={() => setToggle(!toggle)}>
-              <Link to="/Services">Services</Link>
+              <Link to="/Portfolio">Portfolio</Link>
             </li>
             <li className="nav-link" onClick={() => setToggle(!toggle)}>
-              <Link to="/Portfolio">Portfolio</Link>
+              <Link to="/Services">Services</Link>
             </li>
             <li className="nav-link" onClick={() => setToggle(!toggle)}>
               <Link to="/Contact">Contact</Link>
