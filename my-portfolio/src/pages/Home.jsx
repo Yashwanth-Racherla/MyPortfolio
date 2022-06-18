@@ -1,10 +1,26 @@
-import React from "react";
 import About from "./About";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
 // import Contact from "./Contact";
 
 const Home = () => {
+  const counterNum = document.querySelectorAll(".counter-number");
+
+  counterNum.forEach((currElem) => {
+    const updateCounter = () => {
+      const targetNum = parseInt(currElem.dataset.number);
+      const initialNum = parseInt(currElem.innerText);
+      const speed = 200;
+      const incrementNum = targetNum / speed;
+
+      if (initialNum < targetNum) {
+        currElem.innerText = initialNum + incrementNum;
+        setTimeout(updateCounter, 10);
+      }
+    };
+    updateCounter();
+  });
+
   return (
     <>
       <div className="section hero-section">
@@ -31,8 +47,38 @@ const Home = () => {
         </div>
       </div>
       <About />
-      <Portfolio />
       <Services />
+      <Portfolio />
+
+      <div className="section counter-section">
+        <div className="container text-white grid grid-cols-2 lg:grid-cols-4 gap-10 lg:py-10">
+          <div className="text-center">
+            <span className="counter-number" data-number="2000">
+              0
+            </span>
+            <p className="mt-4">Projects Completed</p>
+          </div>
+          <div className="text-center">
+            <span className="counter-number" data-number="6000">
+              0
+            </span>
+            <p className="mt-4">Happy Clients</p>
+          </div>
+          <div className="text-center">
+            <span className="counter-number" data-number="5000">
+              0
+            </span>
+            <p className="mt-4">Cups of Coffee</p>
+          </div>
+          <div className="text-center">
+            <span className="counter-number" data-number="3000">
+              0
+            </span>
+            <p className="mt-4">Real Professionals</p>
+          </div>
+        </div>
+      </div>
+
       {/* <Contact /> */}
     </>
   );

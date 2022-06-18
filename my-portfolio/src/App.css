@@ -217,6 +217,17 @@ p {
   @apply w-1/2 mx-auto md:w-4/5 xl:w-2/3;
 }
 
+/* Services Section CSS */
+
+.services-icon {
+  border: 1px solid black;
+  @apply w-16 h-16 block mx-auto;
+}
+.service-card {
+  box-shadow: var(--shadow);
+  @apply rounded-lg text-center py-14 px-6 transition-all duration-300 hover:-translate-y-4;
+}
+
 /* Portfolio Section CSS */
 .portfolio-section {
   @apply bg-[#F9F9FF];
@@ -242,13 +253,10 @@ p {
   @apply -translate-y-2 xl:-translate-y-4 transition-all duration-500;
 }
 
-/* Services Section CSS */
-
-.services-icon {
-  border: 1px solid black;
-  @apply w-16 h-16 block mx-auto;
+/* Counter Section CSS */
+.counter-section {
+  background: var(--gradient-support);
 }
-.service-card {
-  box-shadow: var(--shadow);
-  @apply rounded-lg text-center py-14 px-6 transition-all duration-300 hover:-translate-y-4;
+.counter-number {
+  @apply font-bold text-2xl sm:text-4xl xl:text-5xl;
 }
