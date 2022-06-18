@@ -16,12 +16,42 @@ const Services = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-14 ">
-          <ServiceCard logoName="logo-react" logoTitle="React" />
-          <ServiceCard logoName="logo-javascript" logoTitle="JavaScript" />
-          <ServiceCard logoName="logo-html5" logoTitle="HTML5" />
-          <ServiceCard logoName="logo-css3" logoTitle="CSS3" />
-          <ServiceCard logoName="game-controller-outline" logoTitle="Games" />
-          <ServiceCard logoName="videocam-outline" logoTitle="Movies" />
+          <ServiceCard
+            logo="logo-react"
+            logoName="React"
+            logoContent="The greatest battles are always with the closest people. The greatest
+        battles are always with the closest"
+          />
+          <ServiceCard
+            logo="logo-javascript"
+            logoName="JavaScript"
+            logoContent="The greatest battles are always with the closest people. The greatest
+        battles are always with the closest"
+          />
+          <ServiceCard
+            logo="logo-html5"
+            logoName="HTML5"
+            logoContent="The greatest battles are always with the closest people. The greatest
+        battles are always with the closest"
+          />
+          <ServiceCard
+            logo="logo-css3"
+            logoName="CSS3"
+            logoContent="The greatest battles are always with the closest people. The greatest
+        battles are always with the closest"
+          />
+          <ServiceCard
+            logo="game-controller-outline"
+            logoName="Games"
+            logoContent="The greatest battles are always with the closest people. The greatest
+        battles are always with the closest"
+          />
+          <ServiceCard
+            logo="videocam-outline"
+            logoName="Movies"
+            logoContent="The greatest battles are always with the closest people. The greatest
+        battles are always with the closest"
+          />
         </div>
       </div>
     </div>
