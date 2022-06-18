@@ -6,7 +6,7 @@ const Portfolio = () => {
     <div className="section portfolio-section">
       <div className="container">
         <div>
-          <h2 className="section-title">My Interests</h2>
+          <h2 className="section-title">My Latest Works</h2>
           <p className="max-w-[700px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta
             sequi asperiores maxime exercitationem odit nesciunt at nihil
@@ -21,12 +21,12 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
-          <PortfolioCard imageSrc="./cricket.jpg" />
-          <PortfolioCard imageSrc="./uncharted.jpg" />
-          <PortfolioCard imageSrc="./movies.jpg" />
-          <PortfolioCard imageSrc="./uncharted.jpg" />
-          <PortfolioCard imageSrc="./movies.jpg" />
-          <PortfolioCard imageSrc="./cricket.jpg" />
+          <PortfolioCard imageSrc="./cricket.jpg" projectName={"Project 1"} />
+          <PortfolioCard imageSrc="./uncharted.jpg" projectName={"Project 2"} />
+          <PortfolioCard imageSrc="./movies.jpg" projectName={"Project 3"} />
+          <PortfolioCard imageSrc="./uncharted.jpg" projectName={"Project 4"} />
+          <PortfolioCard imageSrc="./movies.jpg" projectName={"Project 5"} />
+          <PortfolioCard imageSrc="./cricket.jpg" projectName={"Project 6"} />
         </div>
       </div>
     </div>

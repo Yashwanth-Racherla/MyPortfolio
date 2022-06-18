@@ -222,7 +222,17 @@ p {
   @apply bg-[#F9F9FF];
 }
 .portfolio-card {
+  @apply relative cursor-pointer overflow-hidden;
+}
+.portfolio-card:hover .portfolio-project {
+  @apply translate-y-0 opacity-80;
+}
+.portfolio-image {
   @apply rounded-lg;
+}
+.portfolio-project {
+  background: var(--gradient-support);
+  @apply absolute w-full h-full top-0 left-0 flex items-center justify-center text-2xl font-bold translate-y-full transition-all duration-500 text-white;
 }
 
 /* Services Section CSS */

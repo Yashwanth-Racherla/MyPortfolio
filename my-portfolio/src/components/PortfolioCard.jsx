@@ -1,9 +1,10 @@
 import React from "react";
 
-const PortfolioCard = ({ imageSrc }) => {
+const PortfolioCard = ({ imageSrc, projectName }) => {
   return (
-    <div>
-      <img className="portfolio-card" src={imageSrc} alt="laptop-img" />
+    <div className="portfolio-card">
+      <img className="portfolio-image" src={imageSrc} alt="laptop-img" />
+      <span className="portfolio-project ">{projectName}</span>
     </div>
   );
 };
