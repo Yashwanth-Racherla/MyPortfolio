@@ -234,6 +234,13 @@ p {
   background: var(--gradient-support);
   @apply absolute w-full h-full top-0 left-0 flex items-center justify-center translate-y-full transition-all duration-500 text-white font-bold text-3xl lg:text-2xl xl:text-4xl;
 }
+.portfolio-card-not-active {
+  @apply hidden;
+}
+
+.portfolio-button.active {
+  @apply -translate-y-2 xl:-translate-y-4 transition-all duration-500;
+}
 
 /* Services Section CSS */
 
@@ -243,5 +250,5 @@ p {
 }
 .service-card {
   box-shadow: var(--shadow);
-  @apply rounded-lg text-center py-14 px-6 transition-all duration-300 hover:-translate-y-5;
+  @apply rounded-lg text-center py-14 px-6 transition-all duration-300 hover:-translate-y-4;
 }
