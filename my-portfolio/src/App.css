@@ -90,7 +90,18 @@ p {
 
 .header-section {
   box-shadow: 0 3px 5px -3px gray;
-  @apply bg-[#F9F9FF] py-4 md:py-8;
+  @apply bg-[#F9F9FF] h-20 flex items-center justify-center;
+}
+.sticky .header-section {
+  @apply fixed top-0 left-0 right-0 z-50;
+}
+.sticky .hero-section {
+  @apply mt-20;
+}
+.sticky .biodata-section,
+.services-section,
+.portfolio-section {
+  @apply mt-20;
 }
 
 .nav-bar {
@@ -104,7 +115,7 @@ p {
 }
 .nav-menu {
   background: var(--gradient);
-  @apply w-full h-full absolute left-0 top-0 flex items-center justify-center translate-x-full transition-all duration-1000 opacity-0 z-10 
+  @apply w-full h-full fixed left-0 top-0 flex items-center justify-center translate-x-full transition-all duration-1000 opacity-0 z-10 
   lg:w-auto lg:relative lg:translate-x-0 lg:opacity-100
   lg:bg-none;
 }
@@ -257,6 +268,14 @@ p {
 .counter-section {
   background: var(--gradient-support);
 }
-.counter-number {
+.counter-numbers {
   @apply font-bold text-2xl sm:text-4xl xl:text-5xl;
 }
+
+/* Freelance Section CSS */
+
+/* .freelance-section {
+  background: url("../public/freelancer-bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+} */

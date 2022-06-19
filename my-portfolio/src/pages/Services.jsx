@@ -20,8 +20,7 @@ const Services = () => {
             logo="logo-react"
             logoName="React"
             logoContent="The greatest battles are always with the closest people. The greatest
-        battles are always with the closest.The greatest battles are always with the closest people. The greatest
-        battles are always with the closest"
+        battles are always with the closest."
           />
           <ServiceCard
             logo="logo-javascript"

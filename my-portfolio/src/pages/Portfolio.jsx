@@ -8,7 +8,7 @@ const Portfolio = () => {
       <div className="section portfolio-section">
         <div className="container">
           <div>
-            <h2 className="section-title">My Latest Works</h2>
+            <h2 className="section-title">My Interests</h2>
             <p className="max-w-[700px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
               dicta sequi asperiores maxime exercitationem odit nesciunt at
