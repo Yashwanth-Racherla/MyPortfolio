@@ -3,7 +3,7 @@ import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Counter from "../components/Counter";
 // import Freelance from "../components/Freelance";
-// import Contact from "./Contact";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -37,7 +37,7 @@ const Home = () => {
       <Services />
       {/* <Freelance /> */}
 
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 };

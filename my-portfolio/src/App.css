@@ -59,7 +59,7 @@ p {
   @apply py-16;
 }
 .section-title {
-  @apply text-black text-4xl xl:text-5xl relative mb-16 lg:mb-20;
+  @apply text-black font-bold lg:font-extrabold text-4xl xl:text-5xl relative mb-16 lg:mb-20;
 }
 .section-title::before {
   content: "";
@@ -100,7 +100,8 @@ p {
 }
 .sticky .biodata-section,
 .services-section,
-.portfolio-section {
+.portfolio-section,
+.contact-section {
   @apply mt-20;
 }
 
@@ -279,3 +280,22 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
 } */
+
+/* Contact Section CSS */
+
+.contact-section form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.contact-section input,
+textarea {
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  padding: 12px 20px;
+  width: 100%;
+}
+.contact-section input[type="submit"] {
+  width: 200px;
+}
