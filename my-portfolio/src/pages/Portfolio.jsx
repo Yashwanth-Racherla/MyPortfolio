@@ -22,7 +22,7 @@ const Portfolio = () => {
             <Button id="3" text="Movies" />
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
+          <div className="flex justify-center flex-wrap gap-10 mt-14">
             <PortfolioCard
               id="1"
               imageSrc="./cricket.jpg"
@@ -30,7 +30,7 @@ const Portfolio = () => {
             />
             <PortfolioCard
               id="2"
-              imageSrc="./godOfWar.jpg"
+              imageSrc="./maxPayne.jpg"
               projectName="Project 2"
             />
             <PortfolioCard
@@ -45,7 +45,7 @@ const Portfolio = () => {
             />
             <PortfolioCard
               id="3"
-              imageSrc="./avatar.jpg"
+              imageSrc="./wolverine.jpg"
               projectName="Project 5"
             />
             <PortfolioCard

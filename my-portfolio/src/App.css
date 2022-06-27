@@ -250,13 +250,13 @@ p {
   @apply bg-[#F9F9FF];
 }
 .portfolio-card {
-  @apply relative cursor-pointer overflow-hidden;
+  @apply relative w-full ts:w-[45%] lg:w-[30%] cursor-pointer overflow-hidden;
 }
 .portfolio-card:hover .portfolio-card-overlay {
   @apply translate-y-0 opacity-80;
 }
 .portfolio-card-image {
-  @apply rounded-lg;
+  @apply w-full h-full rounded-lg;
 }
 .portfolio-card-overlay {
   background: var(--gradient-support);
