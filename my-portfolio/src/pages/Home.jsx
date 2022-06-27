@@ -2,7 +2,7 @@ import About from "./About";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Counter from "../components/Counter";
-// import Freelance from "../components/Freelance";
+import Freelance from "../components/Freelance";
 import Contact from "./Contact";
 
 const Home = () => {
@@ -35,8 +35,7 @@ const Home = () => {
       <Portfolio />
       <Counter />
       <Services />
-      {/* <Freelance /> */}
-
+      <Freelance />
       <Contact />
     </>
   );

@@ -275,11 +275,15 @@ p {
 
 /* Freelance Section CSS */
 
-/* .freelance-section {
+.freelance-section {
   background: url("../public/freelancer-bg.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
+  font-family: "Poppins", sans-serif;
+  @apply relative bg-cover bg-no-repeat bg-fixed text-white;
+}
+.freelance-section::before {
+  content: "";
+  @apply absolute w-full h-full top-0 bg-[#3e64ff] opacity-60;
+}
 
 /* Contact Section CSS */
 
