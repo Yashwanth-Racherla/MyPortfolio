@@ -13,7 +13,7 @@ const Portfolio = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
               dicta sequi asperiores maxime exercitationem odit nesciunt at
               nihil placeat, aperiam beatae possimus nostrum autem, non aut quo
-              laborum nobis. Illo.
+              laborum nobis.
             </p>
           </div>
           <div className="flex justify-center gap-4 md:gap-6 lg:gap-8 my-10">
@@ -30,12 +30,12 @@ const Portfolio = () => {
             />
             <PortfolioCard
               id="2"
-              imageSrc="./uncharted.jpg"
+              imageSrc="./godOfWar.jpg"
               projectName="Project 2"
             />
             <PortfolioCard
               id="3"
-              imageSrc="./movies.jpg"
+              imageSrc="./avengers.jpg"
               projectName="Project 3"
             />
             <PortfolioCard
@@ -45,12 +45,12 @@ const Portfolio = () => {
             />
             <PortfolioCard
               id="3"
-              imageSrc="./movies.jpg"
+              imageSrc="./avatar.jpg"
               projectName="Project 5"
             />
             <PortfolioCard
               id="1"
-              imageSrc="./cricket.jpg"
+              imageSrc="./football.jpg"
               projectName="Project 6"
             />
           </div>
