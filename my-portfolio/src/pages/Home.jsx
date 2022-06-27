@@ -6,6 +6,11 @@ import Freelance from "../components/Freelance";
 import Contact from "./Contact";
 
 const Home = () => {
+  const scrollToContact = () => {
+    document.querySelector(".contact-section").scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <div className="section hero-section">
@@ -20,7 +25,9 @@ const Home = () => {
               tempora nihil minima in minus accusamus deleniti vitae aut
               officiis porro dolore!
             </p>
-            <button className="button">HIRE ME</button>
+            <button className="button" onClick={() => scrollToContact()}>
+              HIRE ME
+            </button>
           </div>
           <div className="md:w-1/2">
             <img
@@ -35,7 +42,7 @@ const Home = () => {
       <Portfolio />
       <Counter />
       <Services />
-      <Freelance />
+      <Freelance scroll={scrollToContact} />
       <Contact />
     </>
   );

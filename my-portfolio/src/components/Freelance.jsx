@@ -1,6 +1,6 @@
 import React from "react";
 
-const Freelance = () => {
+const Freelance = ({ scroll }) => {
   return (
     <div className="section freelance-section">
       <div className="container text-center relative py-10">
@@ -11,7 +11,9 @@ const Freelance = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
           nihil excepturi dicta iusto facere l
         </p>
-        <button className="button">HIRE ME</button>
+        <button className="button" onClick={() => scroll()}>
+          HIRE ME
+        </button>
       </div>
     </div>
   );
