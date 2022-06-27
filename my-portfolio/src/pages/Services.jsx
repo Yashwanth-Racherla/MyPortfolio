@@ -19,38 +19,38 @@ const Services = () => {
           <ServiceCard
             logo="logo-react"
             logoName="React"
-            logoContent="The greatest battles are always with the closest people. The greatest
-        battles are always with the closest."
+            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur velit"
           />
           <ServiceCard
             logo="logo-javascript"
             logoName="JavaScript"
-            logoContent="The greatest battles are always with the closest people. The greatest
-        battles are always with the closest"
+            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur velit"
           />
           <ServiceCard
             logo="logo-html5"
             logoName="HTML5"
-            logoContent="The greatest battles are always with the closest people. The greatest
-        battles are always with the closest"
+            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur velit"
           />
           <ServiceCard
             logo="logo-css3"
             logoName="CSS3"
-            logoContent="The greatest battles are always with the closest people. The greatest
-        battles are always with the closest"
+            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur velit"
           />
           <ServiceCard
             logo="game-controller-outline"
             logoName="Games"
-            logoContent="The greatest battles are always with the closest people. The greatest
-        battles are always with the closest"
+            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur velit"
           />
           <ServiceCard
             logo="videocam-outline"
             logoName="Movies"
-            logoContent="The greatest battles are always with the closest people. The greatest
-        battles are always with the closest"
+            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur velit"
           />
         </div>
       </div>

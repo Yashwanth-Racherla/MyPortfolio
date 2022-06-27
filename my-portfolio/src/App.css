@@ -20,6 +20,7 @@
 body {
   margin: 0;
   padding: 0;
+  margin-top: 80px;
   box-sizing: border-box;
   overflow-x: hidden;
   letter-spacing: 1px;
@@ -59,13 +60,13 @@ p {
   @apply py-20;
 }
 
-.hero-section,
+/* .hero-section,
 .biodata-section,
 .services-section,
 .portfolio-section,
 .contact-section {
   @apply mt-20;
-}
+} */
 
 .section-title {
   @apply text-black font-bold lg:font-extrabold text-4xl xl:text-5xl relative mb-16 lg:mb-20;
