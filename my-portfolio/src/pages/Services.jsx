@@ -6,7 +6,7 @@ const Services = () => {
     <div className="section services-section">
       <div className="container">
         <div>
-          <h2 className="section-title"> Service Offers </h2>
+          <h2 className="section-title"> Services </h2>
           <p className="max-w-[700px]">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Consequatur velit, doloribus placeat inventore voluptatem nulla,
