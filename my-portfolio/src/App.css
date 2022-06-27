@@ -113,12 +113,12 @@ p {
 }
 .nav-menu {
   background: var(--gradient);
-  @apply w-full h-full fixed left-0 top-0 flex items-center justify-center translate-x-full transition-all duration-1000 opacity-0 z-10 
-  lg:w-auto lg:relative lg:translate-x-0 lg:opacity-100
+  @apply w-full h-full fixed left-0 top-0 flex items-center justify-center translate-x-full transition-all duration-1000 z-10 
+  lg:w-auto lg:relative lg:translate-x-0
   lg:bg-none;
 }
 .nav-menu.mobile {
-  @apply translate-x-0 opacity-100;
+  @apply translate-x-0;
 }
 .nav-links {
   @apply flex flex-col lg:flex-row;
@@ -202,7 +202,7 @@ p {
 .biodata-skill-bar {
   background: var(--helper);
   @apply absolute top-[200%] left-[95%] -translate-x-1/2 px-[6px] py-[2px] text-white text-[10px] font-bold 
-  delay-[2s] opacity-0;
+  delay-[2s] transition-all duration-[2s] opacity-0;
 }
 .biodata-skill-bar.active {
   @apply opacity-100;
