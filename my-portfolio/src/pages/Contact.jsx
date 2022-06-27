@@ -31,6 +31,7 @@ const Contact = () => {
                 id="text"
                 placeholder="Username"
                 required
+                autoComplete="off"
               />
             </div>
             <div>
@@ -41,6 +42,7 @@ const Contact = () => {
                 id="email"
                 placeholder="abc@xyz.com"
                 required
+                autoComplete="off"
               />
             </div>
           </div>
@@ -53,6 +55,7 @@ const Contact = () => {
               id="subject"
               placeholder="Subject"
               required
+              autoComplete="off"
             />
           </div>
 

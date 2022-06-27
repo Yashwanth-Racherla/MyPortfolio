@@ -1,6 +1,36 @@
 import React from "react";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    const biodataSection = document.querySelector(".biodata-section");
+    const bioProgressObserver = new IntersectionObserver(
+      (entries, observer) => {
+        const [entry] = entries;
+        console.log(entry);
+
+        if (!entry.isIntersecting) return;
+
+        const progressBars = document.querySelectorAll(".biodata-progress-bar");
+
+        const skillBars = document.querySelectorAll(".biodata-skill-bar");
+
+        progressBars.forEach((currElem) => {
+          currElem.classList.add("active");
+        });
+        skillBars.forEach((currElem) => {
+          currElem.classList.add("active");
+        });
+      },
+      {
+        root: null,
+        threshold: 0.4,
+      }
+    );
+
+    bioProgressObserver.observe(biodataSection);
+  }, []);
+
   return (
     <div className="section biodata-section">
       <div className="container flex-box flex-row-reverse">

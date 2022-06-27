@@ -56,8 +56,17 @@ p {
 }
 
 .section {
-  @apply py-16;
+  @apply py-20;
 }
+
+.hero-section,
+.biodata-section,
+.services-section,
+.portfolio-section,
+.contact-section {
+  @apply mt-20;
+}
+
 .section-title {
   @apply text-black font-bold lg:font-extrabold text-4xl xl:text-5xl relative mb-16 lg:mb-20;
 }
@@ -90,19 +99,7 @@ p {
 
 .header-section {
   box-shadow: 0 3px 5px -3px gray;
-  @apply bg-[#F9F9FF] h-20 flex items-center justify-center;
-}
-.sticky .header-section {
-  @apply fixed top-0 left-0 right-0 z-50;
-}
-.sticky .hero-section {
-  @apply mt-20;
-}
-.sticky .biodata-section,
-.services-section,
-.portfolio-section,
-.contact-section {
-  @apply mt-20;
+  @apply bg-[#F9F9FF] h-20 flex items-center justify-center fixed top-0 left-0 right-0 z-50;
 }
 
 .nav-bar {
@@ -185,23 +182,30 @@ p {
 .biodata-progress-bar::after {
   content: "";
   background: var(--gradient);
-  @apply absolute top-[120%] left-0 w-[95%] h-[6px] lg:h-2 rounded-sm;
+  @apply absolute top-[120%] left-0 w-[10%] h-[6px] lg:h-2 rounded-sm transition-all ease-in-out duration-[2s];
 }
-.biodata-progress-bar-2::after {
+.biodata-progress-bar.active::after {
+  @apply w-[95%];
+}
+.biodata-progress-bar-2.active::after {
   @apply w-[90%];
 }
-.biodata-progress-bar-3::after {
+.biodata-progress-bar-3.active::after {
   @apply w-[80%];
 }
-.biodata-progress-bar-4::after {
+.biodata-progress-bar-4.active::after {
   @apply w-[70%];
 }
-.biodata-progress-bar-5::after {
+.biodata-progress-bar-5.active::after {
   @apply w-[85%];
 }
 .biodata-skill-bar {
   background: var(--helper);
-  @apply absolute top-[200%] left-[95%] -translate-x-1/2 px-[6px] py-[2px] text-white text-[10px] font-bold;
+  @apply absolute top-[200%] left-[95%] -translate-x-1/2 px-[6px] py-[2px] text-white text-[10px] font-bold 
+  delay-[2s] opacity-0;
+}
+.biodata-skill-bar.active {
+  @apply opacity-100;
 }
 .biodata-skill-bar-2 {
   @apply left-[90%];

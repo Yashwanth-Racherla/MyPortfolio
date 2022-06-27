@@ -1,27 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [toggle, setToggle] = useState(true);
-
-  useEffect(() => {
-    const heroSection = document.querySelector(".hero-section");
-    const headerObserver = new IntersectionObserver(
-      (entries, observer) => {
-        const [entry] = entries;
-
-        !entry.isIntersecting
-          ? document.body.classList.add("sticky")
-          : document.body.classList.remove("sticky");
-      },
-      {
-        root: null,
-        threshold: 0,
-      }
-    );
-
-    headerObserver.observe(heroSection);
-  }, []);
 
   return (
     <header className="header-section">

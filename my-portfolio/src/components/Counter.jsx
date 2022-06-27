@@ -17,7 +17,7 @@ const Counter = () => {
             const initialNum = parseInt(counterNum.innerText);
             const targetNum = parseInt(counterNum.dataset.number);
 
-            const speed = 200;
+            const speed = 100;
             const incrementNum = targetNum / speed;
 
             if (initialNum < targetNum) {
@@ -42,25 +42,25 @@ const Counter = () => {
     <div className="section counter-section">
       <div className="container text-white grid grid-cols-2 lg:grid-cols-4 gap-10 lg:py-6">
         <div className="text-center">
-          <span className="counter-numbers" data-number="2000">
+          <span className="counter-numbers" data-number="400">
             0
           </span>
           <p className="mt-4">Projects Completed</p>
         </div>
         <div className="text-center">
-          <span className="counter-numbers" data-number="6000">
+          <span className="counter-numbers" data-number="200">
             0
           </span>
           <p className="mt-4">Happy Clients</p>
         </div>
         <div className="text-center">
-          <span className="counter-numbers" data-number="5000">
+          <span className="counter-numbers" data-number="500">
             0
           </span>
           <p className="mt-4">Cups of Coffee</p>
         </div>
         <div className="text-center">
-          <span className="counter-numbers" data-number="3000">
+          <span className="counter-numbers" data-number="100">
             0
           </span>
           <p className="mt-4">Real Professionals</p>
