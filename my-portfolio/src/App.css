@@ -122,7 +122,7 @@ p {
   @apply translate-x-0;
 }
 .nav-links {
-  @apply flex flex-col lg:flex-row;
+  @apply flex flex-col items-center lg:flex-row;
 }
 .nav-link {
   @apply my-4 lg:my-0 lg:mx-4 xl:mx-6 font-bold text-2xl lg:text-base  xl:text-lg uppercase text-center cursor-pointer hover:text-white lg:hover:text-[#8490ff] tracking-wide;
