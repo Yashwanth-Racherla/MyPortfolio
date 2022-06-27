@@ -32,6 +32,7 @@ const Contact = () => {
                 placeholder="Username"
                 required
                 autoComplete="off"
+                minLength={5}
               />
             </div>
             <div>
@@ -67,6 +68,8 @@ const Contact = () => {
               cols="3"
               rows="5"
               placeholder="Message"
+              required
+              minLength={10}
             ></textarea>
           </div>
 
