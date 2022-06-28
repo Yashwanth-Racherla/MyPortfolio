@@ -60,14 +60,6 @@ p {
   @apply py-20;
 }
 
-/* .hero-section,
-.biodata-section,
-.services-section,
-.portfolio-section,
-.contact-section {
-  @apply mt-20;
-} */
-
 .section-title {
   @apply text-black font-bold lg:font-extrabold text-4xl xl:text-5xl relative mb-16 lg:mb-20;
 }

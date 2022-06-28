@@ -80,7 +80,7 @@ const About = () => {
           </div>
           <div>
             <button className="button">
-              <a href="/about">Download Resume</a>
+              <a href="/About">Download Resume</a>
             </button>
           </div>
         </div>
