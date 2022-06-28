@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   useEffect(() => {
@@ -80,7 +81,7 @@ const About = () => {
           </div>
           <div>
             <button className="button">
-              <a href="/About">Download Resume</a>
+              <Link to="/about">Download Resume</Link>
             </button>
           </div>
         </div>
