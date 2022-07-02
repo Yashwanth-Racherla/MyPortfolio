@@ -19,9 +19,9 @@ const Home = () => {
             <span className="text-[#8490ff] font-bold">THIS IS ME</span>
             <h1 className="mb-6 xl:mb-14">YASHWANTH RACHERLA</h1>
             <p className="mb-6 xl:mb-14 max-w-[700px]">
-              I'm Yashwanth Racherla. A Front End Developer and freelancer. 5
-              years of Experience as Web Developer using front end technologies
-              HTML, CSS and JavaScript.
+              I'm Yashwanth Racherla, A Front End Developer and Freelancer
+              having 5 years of Experience as Web Developer using front end
+              technologies HTML, CSS and JavaScript.
             </p>
             <button className="button" onClick={() => scrollToContact()}>
               HIRE ME
