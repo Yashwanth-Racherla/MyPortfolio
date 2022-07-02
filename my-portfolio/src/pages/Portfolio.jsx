@@ -8,13 +8,7 @@ const Portfolio = () => {
       <div className="section portfolio-section">
         <div className="container">
           <div>
-            <h2 className="section-title">My Interests</h2>
-            <p className="max-w-[700px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              dicta sequi asperiores maxime exercitationem odit nesciunt at
-              nihil placeat, aperiam beatae possimus nostrum autem, non aut quo
-              laborum nobis.
-            </p>
+            <h2 className="section-title">My Personal Projects</h2>
           </div>
           <div className="flex justify-center gap-4 md:gap-6 lg:gap-8 my-10">
             <Button id="1" text="Sports" />
@@ -26,32 +20,34 @@ const Portfolio = () => {
             <PortfolioCard
               id="1"
               imageSrc="./cricket.jpg"
-              projectName="Project 1"
+              projectName="My Cricket Website"
+              projectInfo="Being a cricket fan, I created a website which shows live score updates."
+              Redirect="Click Here"
             />
             <PortfolioCard
               id="2"
               imageSrc="./maxPayne.jpg"
-              projectName="Project 2"
+              projectName="Coming Soon"
             />
             <PortfolioCard
               id="3"
               imageSrc="./avengers.jpg"
-              projectName="Project 3"
+              projectName="Coming Soon"
             />
             <PortfolioCard
               id="2"
               imageSrc="./uncharted.jpg"
-              projectName="Project 4"
+              projectName="Coming Soon"
             />
             <PortfolioCard
               id="3"
               imageSrc="./wolverine.jpg"
-              projectName="Project 5"
+              projectName="Coming Soon"
             />
             <PortfolioCard
               id="1"
               imageSrc="./football.jpg"
-              projectName="Project 6"
+              projectName="Coming Soon"
             />
           </div>
         </div>
