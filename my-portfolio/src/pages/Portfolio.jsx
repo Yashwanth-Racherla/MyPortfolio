@@ -5,6 +5,42 @@ import PortfolioCard from "../components/PortfolioCard";
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState(0);
 
+  const portfolioData = [
+    {
+      id: 1,
+      imageSrc: "./cricket.jpg",
+      projectName: "My Cricket Website",
+      projectInfo:
+        "Being a cricket fan, I created a website which shows live cricket score updates.",
+      projectLink: "https://cricbuzz.com",
+    },
+    {
+      id: 2,
+      imageSrc: "./maxPayne.jpg",
+      projectName: "Coming Soon",
+    },
+    {
+      id: 3,
+      imageSrc: "./avengers.jpg",
+      projectName: "Coming Soon",
+    },
+    {
+      id: 2,
+      imageSrc: "./uncharted.jpg",
+      projectName: "Coming Soon",
+    },
+    {
+      id: 3,
+      imageSrc: "./wolverine.jpg",
+      projectName: "Coming Soon",
+    },
+    {
+      id: 1,
+      imageSrc: "./football.jpg",
+      projectName: "Coming Soon",
+    },
+  ];
+
   return (
     <>
       <div className="section portfolio-section">
@@ -30,57 +66,29 @@ const Portfolio = () => {
             />
           </div>
           <div className="flex justify-center flex-wrap gap-10 mt-14">
-            {(activeCategory === 1 || activeCategory === 0) && (
-              <PortfolioCard
-                id="1"
-                imageSrc="./cricket.jpg"
-                projectName="My Cricket Website"
-                projectInfo="Being a cricket fan, I created a website which shows live cricket score updates."
-                navigateTo="https://cricbuzz.com"
-              />
-            )}
-            {(activeCategory === 2 || activeCategory === 0) && (
-              <PortfolioCard
-                id="2"
-                imageSrc="./maxPayne.jpg"
-                projectName="Coming Soon"
-              />
-            )}
-            {(activeCategory === 3 || activeCategory === 0) && (
-              <PortfolioCard
-                id="3"
-                imageSrc="./avengers.jpg"
-                projectName="Coming Soon"
-              />
-            )}
-            {(activeCategory === 2 || activeCategory === 0) && (
-              <PortfolioCard
-                id="2"
-                imageSrc="./uncharted.jpg"
-                projectName="Coming Soon"
-              />
-            )}
-            {(activeCategory === 3 || activeCategory === 0) && (
-              <PortfolioCard
-                id="3"
-                imageSrc="./wolverine.jpg"
-                projectName="Coming Soon"
-              />
-            )}
-            {(activeCategory === 1 || activeCategory === 0) && (
-              <PortfolioCard
-                id="1"
-                imageSrc="./football.jpg"
-                projectName="Coming Soon"
-              />
-            )}
+            {portfolioData.map((portfolioCard) => {
+              return (
+                (activeCategory === portfolioCard.id ||
+                  activeCategory === 0) && (
+                  <PortfolioCard
+                    id={portfolioCard.id}
+                    imageSrc={portfolioCard.imageSrc}
+                    projectName={portfolioCard.projectName}
+                    projectInfo={portfolioCard.projectInfo}
+                    projectLink={portfolioCard.projectLink}
+                  />
+                )
+              );
+            })}
           </div>
-          <button
-            className="button mt-8 block mx-auto"
-            onClick={() => setActiveCategory(0)}
-          >
-            SHOW ALL PROJECTS
-          </button>
+          {activeCategory !== 0 && (
+            <button
+              className="button mt-8 block mx-auto"
+              onClick={() => setActiveCategory(0)}
+            >
+              SHOW ALL PROJECTS
+            </button>
+          )}
         </div>
       </div>
     </>

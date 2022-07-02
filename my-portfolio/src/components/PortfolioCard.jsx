@@ -4,9 +4,8 @@ const PortfolioCard = ({
   imageSrc,
   projectName,
   projectInfo,
+  projectLink,
   id,
-  Redirect,
-  navigateTo,
 }) => {
   return (
     <div className={`portfolio-card portfolio-card--${id}`}>
@@ -23,10 +22,10 @@ const PortfolioCard = ({
           </span>
           <a
             className="font-bold text-xl mt-4 underline"
-            href={navigateTo}
+            href={projectLink}
             target="blank"
           >
-            {navigateTo ? "Click here" : ""}
+            {projectLink ? "Click here" : ""}
           </a>
         </div>
       </div>
