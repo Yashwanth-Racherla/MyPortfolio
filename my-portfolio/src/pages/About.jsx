@@ -38,16 +38,23 @@ const About = () => {
         <div className="md:w-1/2">
           <div className="mb-10">
             <h2 className="section-title">My Bio-Data</h2>
-            <p className="max-w-[700px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              autem iure temporibus nihil adipisci eius tempora perferendis aut
-              consequuntur doloremque fugiat repudiandae magnam saepe cum, quos
-              sapiente quibusdam a enim! Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Sed, fuga? Vel aliquam aliquid accusantium
-              voluptatum libero quisquam eum repellendus quod quo dignissimos,
-              laborum necessitatibus ut, repellat eveniet quibusdam, reiciendis
-              molestias?
-            </p>
+            <ul className="max-w-[700px] list-outside list-disc ml-4 text-[#777777]">
+              <li className="mb-4">
+                Experience in developing web pages using HTML/HTML5, CSS/CSS3,
+                JavaScript (ES5 and ES6+), React JS, JQuery, JSON, Ajax,
+                Tailwind, Bootstrap.
+              </li>
+              <li className="mb-4">
+                Having 1+ year of experience in developing web applications
+                using React and knowledge on Next JS and Node JS as back-end
+                technologies.
+              </li>
+              <li className="mb-4">
+                Experience in Class and Functional components, React Hooks,
+                Redux and Good understanding of design system development using
+                React (Storybook).
+              </li>
+            </ul>
           </div>
           <div className="mb-16">
             <div className="biodata-stats">
