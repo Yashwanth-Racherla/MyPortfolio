@@ -7,11 +7,8 @@ const Services = () => {
       <div className="container">
         <div>
           <h2 className="section-title"> Services </h2>
-          <p className="max-w-[700px]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequatur velit, doloribus placeat inventore voluptatem nulla,
-            quaerat eligendi ad ratione vel laborum, optio nemo sit numquam
-            vitae enim obcaecati quos laudantium.
+          <p className="max-w-[700px] text-xl">
+            Give me the design and I will build you a website using below tools.
           </p>
         </div>
 
