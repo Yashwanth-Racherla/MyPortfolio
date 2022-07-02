@@ -19,38 +19,33 @@ const Services = () => {
           <ServiceCard
             logo="logo-react"
             logoName="React"
-            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequatur velit"
+            logoContent="Can develop the latest user-facing features using React.js and built reusable components for future use."
           />
           <ServiceCard
             logo="logo-javascript"
             logoName="JavaScript"
-            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequatur velit"
+            logoContent="Convert photoshop design files to interactive web pages using HTML, CSS and JavaScript."
           />
           <ServiceCard
             logo="logo-html5"
             logoName="HTML5"
-            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequatur velit"
+            logoContent="Experience in developing accessible websites as per WCAG 2.1 guidelines and SEO
+            "
           />
           <ServiceCard
             logo="logo-css3"
             logoName="CSS3"
-            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequatur velit"
+            logoContent="Created Responsive layouts (Mobile/Tablet/Desktop) using CSS"
           />
           <ServiceCard
-            logo="game-controller-outline"
-            logoName="Games"
-            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequatur velit"
+            logo="laptop-outline"
+            logoName="Tailwind"
+            logoContent="Good knowledge of tailwind classes and configuring custom classes as per the requirement "
           />
           <ServiceCard
-            logo="videocam-outline"
-            logoName="Movies"
-            logoContent=" Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequatur velit"
+            logo="apps-outline"
+            logoName="Bootstrap"
+            logoContent="Good knowledge of Bootstrap and can use it as per the requirement"
           />
         </div>
       </div>
