@@ -3,6 +3,14 @@ import Button from "../components/Button";
 import PortfolioCard from "../components/PortfolioCard";
 
 const Portfolio = () => {
+  const showAllButtons = () => {
+    document.querySelectorAll(".portfolio-card").forEach((card) => {
+      card.classList.remove("portfolio-card-not-active");
+    });
+    document
+      .querySelectorAll(".portfolio-button")
+      .forEach((button) => button.classList.remove("active"));
+  };
   return (
     <>
       <div className="section portfolio-section">
@@ -23,7 +31,6 @@ const Portfolio = () => {
               projectName="My Cricket Website"
               projectInfo="Being a cricket fan, I created a website which shows live cricket score updates."
               navigateTo="https://cricbuzz.com"
-              Redirect="Click Here"
             />
             <PortfolioCard
               id="2"
@@ -51,6 +58,12 @@ const Portfolio = () => {
               projectName="Coming Soon"
             />
           </div>
+          <button
+            className="button mt-8 block mx-auto"
+            onClick={() => showAllButtons()}
+          >
+            SHOW ALL PROJECTS
+          </button>
         </div>
       </div>
     </>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const PortfolioCard = ({
   imageSrc,
@@ -27,7 +26,7 @@ const PortfolioCard = ({
             href={navigateTo}
             target="blank"
           >
-            {Redirect}
+            {navigateTo ? "Click here" : ""}
           </a>
         </div>
       </div>
