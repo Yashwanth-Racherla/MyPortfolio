@@ -52,25 +52,29 @@ const Portfolio = () => {
             <Button
               id="1"
               text="Sports"
+              className={`portfolio-button ${activeCategory === 1 && "active"}`}
               onButtonClick={() => setActiveCategory(1)}
             />
             <Button
               id="2"
               text="Games"
+              className={`portfolio-button ${activeCategory === 2 && "active"}`}
               onButtonClick={() => setActiveCategory(2)}
             />
             <Button
               id="3"
               text="Movies"
+              className={`portfolio-button ${activeCategory === 3 && "active"}`}
               onButtonClick={() => setActiveCategory(3)}
             />
           </div>
           <div className="flex justify-center flex-wrap gap-10 mt-14">
-            {portfolioData.map((portfolioCard) => {
+            {portfolioData.map((portfolioCard, index) => {
               return (
                 (activeCategory === portfolioCard.id ||
                   activeCategory === 0) && (
                   <PortfolioCard
+                    key={index}
                     id={portfolioCard.id}
                     imageSrc={portfolioCard.imageSrc}
                     projectName={portfolioCard.projectName}
@@ -82,12 +86,11 @@ const Portfolio = () => {
             })}
           </div>
           {activeCategory !== 0 && (
-            <button
-              className="button mt-8 block mx-auto"
-              onClick={() => setActiveCategory(0)}
-            >
-              SHOW ALL PROJECTS
-            </button>
+            <Button
+              className="mt-8 block mx-auto"
+              onButtonClick={() => setActiveCategory(0)}
+              text="Show All Projects"
+            />
           )}
         </div>
       </div>
