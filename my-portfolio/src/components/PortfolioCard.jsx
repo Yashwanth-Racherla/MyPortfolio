@@ -7,10 +7,10 @@ const PortfolioCard = ({
   projectInfo,
   id,
   Redirect,
+  navigateTo,
 }) => {
   return (
     <div className={`portfolio-card portfolio-card--${id}`}>
-      {/* <Link to="/"> */}
       <img
         className="portfolio-card-image"
         src={imageSrc}
@@ -22,12 +22,15 @@ const PortfolioCard = ({
           <span className=" portfolio-card-overlay-description">
             {projectInfo}
           </span>
-          <Link className="font-bold text-xl mt-4 underline" to="/">
+          <a
+            className="font-bold text-xl mt-4 underline"
+            href={navigateTo}
+            target="blank"
+          >
             {Redirect}
-          </Link>
+          </a>
         </div>
       </div>
-      {/* </Link> */}
     </div>
   );
 };

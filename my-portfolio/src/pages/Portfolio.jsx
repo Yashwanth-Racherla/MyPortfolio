@@ -21,7 +21,8 @@ const Portfolio = () => {
               id="1"
               imageSrc="./cricket.jpg"
               projectName="My Cricket Website"
-              projectInfo="Being a cricket fan, I created a website which shows live score updates."
+              projectInfo="Being a cricket fan, I created a website which shows live cricket score updates."
+              navigateTo="https://cricbuzz.com"
               Redirect="Click Here"
             />
             <PortfolioCard
