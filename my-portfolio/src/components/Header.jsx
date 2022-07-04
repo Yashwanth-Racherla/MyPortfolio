@@ -35,16 +35,16 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="nav-link" onClick={() => setToggleFunc(true)}>
-              <Link to="/About">About</Link>
+              <Link to="/#/About">About</Link>
             </li>
             <li className="nav-link" onClick={() => setToggleFunc(true)}>
-              <Link to="/Portfolio">Portfolio</Link>
+              <Link to="/#/Portfolio">Portfolio</Link>
             </li>
             <li className="nav-link" onClick={() => setToggleFunc(true)}>
-              <Link to="/Services">Services</Link>
+              <Link to="/#/Services">Services</Link>
             </li>
             <li className="nav-link" onClick={() => setToggleFunc(true)}>
-              <Link to="/Contact">Contact</Link>
+              <Link to="/#/Contact">Contact</Link>
             </li>
           </ul>
         </div>
