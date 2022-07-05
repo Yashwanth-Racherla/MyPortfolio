@@ -9,17 +9,15 @@ const Portfolio = () => {
     {
       id: 1,
       imageSrc: "./cricket.jpg",
-      projectName: "Cricket Website",
-      projectInfo:
-        "Being a cricket fan, I created a website which shows live cricket score updates.",
+      projectName: "CRICKET",
+      projectInfo: "Watch live cricket scores, results and upcoming matches ",
       projectLink: "https://cricketlive.netlify.app",
     },
     {
       id: 3,
       imageSrc: "./avengers.jpg",
-      projectName: "Movie Website",
-      projectInfo:
-        "Being a Cinema lover, I created a website which shows all the movies and its details.",
+      projectName: "MOVIES",
+      projectInfo: "Enter Movie name in search bar and get movie details ",
       projectLink: "https://yashmovies.netlify.app",
     },
     {
