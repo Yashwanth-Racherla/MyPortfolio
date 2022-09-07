@@ -1,3 +1,3 @@
 # MyPortfolio
 
-https://cricketlive.netlify.app/
+https://yashwanthportfolio.netlify.app/
