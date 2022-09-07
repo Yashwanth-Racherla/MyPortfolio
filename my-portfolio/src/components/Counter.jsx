@@ -40,30 +40,18 @@ const Counter = () => {
   }, []);
   return (
     <div className="section counter-section">
-      <div className="container text-white grid grid-cols-2 lg:grid-cols-4 gap-10 lg:py-6">
-        <div className="text-center">
-          <span className="counter-numbers" data-number="4000">
-            0
-          </span>
-          <p className="mt-4">Projects Completed</p>
-        </div>
-        <div className="text-center">
-          <span className="counter-numbers" data-number="2000">
-            0
-          </span>
-          <p className="mt-4">Happy Clients</p>
-        </div>
+      <div className="container text-white grid grid-cols-2 gap-10 lg:py-6">
         <div className="text-center">
           <span className="counter-numbers" data-number="5000">
             0
           </span>
-          <p className="mt-4">Cups of Coffee</p>
+          <p className="mt-4">Hours spent writing code</p>
         </div>
         <div className="text-center">
-          <span className="counter-numbers" data-number="1000">
+          <span className="counter-numbers" data-number="100000">
             0
           </span>
-          <p className="mt-4">Real Professionals</p>
+          <p className="mt-4">Number of Happy Users</p>
         </div>
       </div>
     </div>
