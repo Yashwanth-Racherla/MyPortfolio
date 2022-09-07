@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const About = () => {
   useEffect(() => {
@@ -44,9 +43,8 @@ const About = () => {
                 Tailwind, Bootstrap.
               </li>
               <li className="mb-4">
-                Having 1+ year of experience in developing web applications
-                using React and knowledge on Next JS and Node JS as back-end
-                technologies.
+                Having 2+ years of experience in developing web applications
+                using React and knowledge on Next JS.
               </li>
               <li className="mb-4">
                 Experience in Class and Functional components, React Hooks,
@@ -87,7 +85,9 @@ const About = () => {
           </div>
           <div>
             <button className="button">
-              <Link to="/about">Download Resume</Link>
+              <a href="/yash-resume.pdf" target="_blank">
+                Download Resume
+              </a>
             </button>
           </div>
         </div>
