@@ -155,7 +155,7 @@ ul {
   @apply bg-[#F9F9FF];
 }
 .hero-image {
-  @apply mt-6 w-2/3 md:w-4/5 mx-auto;
+  @apply w-1/4 h-auto mt-6 md:w-2/3 mx-auto;
 }
 
 /* Biodata Section CSS */
